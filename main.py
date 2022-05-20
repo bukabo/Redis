@@ -54,10 +54,12 @@ print(f"sinter: {red.sinter('my_set_1', 'my_set_2')}")
 
 print('-' * 20)
 record = {
-    "name": "PythonRu",
-    "description": "Redis tutorials",
-    "website": "https://pythonru.com/"
+    "name": "Denis",
+    "phone": "9115654848",
+    "id": "11111"
 }
-red.hset('business', mapping=record)
+
+
+print(red.hset('business', mapping=record))
 print(f"business: {red.hgetall('business')}")
 
